@@ -12,7 +12,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
 
 
-email_id,pass_word,meet_code = open('login-details.txt').read().split('\n')
+email_id,pass_word,meet_code = (open('login-details.txt').read().split('\n'))[:3]
 path = pathlib.Path(__file__).parent.absolute() / "chromedriver.exe"
 
 
@@ -71,3 +71,4 @@ while True:
 	elif changed_count <= round(0.25*attend_count):
 		EndCall = driver.find_element_by_xpath(ENDxpath)
 		EndCall.click()
+		break
