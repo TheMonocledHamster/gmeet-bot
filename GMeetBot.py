@@ -61,8 +61,9 @@ ignore = (NoSuchElementException,StaleElementReferenceException)
 joinMeet = WebDriverWait(driver,15,ignored_exceptions=ignore).until(ExpCons.element_to_be_clickable((By.XPATH,JOINxpath)))
 joinMeet.click() #Meet Joined
 driver.implicitly_wait(10)
-studentsHere = driver.find_element_by_xpath(NUMxpath)
+studentsHere = WebDriverWait(driver,10,ignored_exceptions=ignore).until(ExpCons.element_to_be_clickable((By.XPATH,NUMxpath)))
 attend_count = int(studentsHere.text)
+driver.implicitly_wait(10)
 
 while True:
 	changed_count = int(studentsHere.text)
@@ -72,3 +73,4 @@ while True:
 		EndCall = driver.find_element_by_xpath(ENDxpath)
 		EndCall.click()
 		break
+driver.quit()
