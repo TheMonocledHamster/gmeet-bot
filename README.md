@@ -1,10 +1,16 @@
 # gmeet-bot
-14 Nov '20
+16 Nov '20
+Initial Release (v0.5)
 
-Designed for Chrome+Windows.
-Mainly uses selenium and webbrowser modules in python3.
+Download, edit the textfile (named login-details.txt) and run the .exe file
 
-Logs in to GMeet and attends your online class, and automatically leaves once 3/4 of the class has left.
+Runs Google Chrome on Windows 10
+Python modules used: Selenium and Webbrowser (python3)
+
+Logs in to GMeet, attends your online class, and automatically leaves once 75% of the class has left.
 Joins with dummy camera and mic, both off.
-Working on an auto-response feature where it can play a pre-recorded audio file upon your name being called, using Google Captions.
 Remember to customise the login-details file with email-id, password and Meet code in consecutive lines. Ensure that there are no whitespaces.
+
+Oh, and remember to pay attention to class ;-P
+
+(I'm currently working on upgrades to answer attendance as well as expansion to other browsers and platforms)
