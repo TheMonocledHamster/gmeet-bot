@@ -17,4 +17,4 @@ Logs in to GMeet, attends your online class, and automatically leaves once 75% o
 Oh, and pay attention to class ;-P
 
 
-(I'm currently working on upgrades to answer attendance as well as expansion to other browsers and platforms)
+(I'm currently working on upgrades to answer when your name is called as well as on expansion to other browsers and platforms)
