@@ -1,3 +1,5 @@
+# DEPRECATED!  
+
 # gmeet-bot
 
 ~~Currently runs Google Chrome v86 and later on Windows 10.~~  
